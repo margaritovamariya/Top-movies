@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="registration.css">
+  <script src="registration.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Movie Galaxy</title>
+
+</head>
+
+<body class="best">
+  <div class="login">
+
+    <header class="heading">
+      <div class="logo">
+        <a href="login.html">
+          <img src="photos/eye of ra.png" alt="eye of ra - logo">
+        </a>
+      </div>
+      <div class="links">
+        <ul>
+          <li><a href="login.html">Login</a></li>
+          <li class="active"><a href="registration.html">Register</a></li>
+          <li><a href="top10.html">TOP 10</a></li>
+          <li><a href="allProducts.html">All movies</a></li>
+
+        </ul>
+      </div>
+    </header>
+
+  </div>
+
+  <main>
+
+
+    <article class="form-wrapper" style="width: 500px;">
+      <h4>Join our family</h4>
+      <form id="formId">
+        <div class="first-row">
+          <input type="text" id="name" placeholder="Enter name" style="color: white;" required>
+          <input type="text" id="username" placeholder="Enter username" style="color: white;" class="user-name" required>
+        </div>
+
+        <div class="second-row">
+          <input type="tel" id="tel"  placeholder="Enter phone number" style="color: white;" required>
+          <input type="email" id="email" name="text1" placeholder="Enter email" style="color: white;" class="email" required>
+        </div>
+
+        <div class="third-row">
+          <input type="password" id="psw" placeholder="Enter password" name="psw"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+            required style="color: white;">
+          <input type="password" id="confirm_pass" placeholder="Confirm password" style="color: white;" onkeyup="validate_password()" class="pass-val"
+            required>
+        </div>
+
+        <span id="wrong_pass_alert"></span>
+        <button type="submit" id="create" class="submit_btn">
+          Submit
+        </button>
+
+
+    </article>
+    <div id="message">
+      <h3>Password must contain the following:</h3>
+      <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+      <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+      <p id="number" class="invalid">A <b>number</b></p>
+      <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+    </div>
+
+    <p class="message">DIVE DEEP. SEEK. EXPLORE.</p>
+
+  </main>
+
+  <footer>
+    <div class="footer">
+      <div class="row">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+      </div>
+
+      <div class="row" id="row2">
+        <ul>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Our Services</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Career</a></li>
+        </ul>
+      </div>
+
+      <div class="row" id="row3">
+        INFERNO Copyright © 2021 Inferno - All rights reserved || Designed By: Mahesh
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
